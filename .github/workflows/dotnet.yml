@@ -26,6 +26,9 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Stage2
-      run: chmod +x make_html.sh && ./make_html.sh /CIGitHub/FlatBiblio
+    - name: Change Directory
+      run: cd path/to/CIGitHub/FlatBiblio
+    - name: Grant execute permission and run make_html.sh
+      run: chmod +x make_html.sh && ./make_html.sh
+
 
