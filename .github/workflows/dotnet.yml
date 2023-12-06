@@ -27,5 +27,5 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Stage2
-      run: ./make_html.sh CIGitHub/FlatBiblio
+      run: chmod +x make_html.sh && ./make_html.sh CIGitHub/FlatBiblio
 
