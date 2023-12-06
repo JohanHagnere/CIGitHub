@@ -31,4 +31,4 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4      
       with:
-        folder: ./FlatBiblio/bin/Debug/net8.0/FlatBiblio/wwwroot
+        folder: build
