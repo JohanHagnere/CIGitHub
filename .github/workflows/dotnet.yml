@@ -28,5 +28,6 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - name: Run make_html.sh
       run: sh make_html.sh FlatBiblio/bin/Debug/net8.0/FlatBiblio
-
-
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4.5.0
+            
