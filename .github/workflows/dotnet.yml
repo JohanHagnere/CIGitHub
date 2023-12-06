@@ -27,6 +27,6 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Run make_html.sh
-      run: sh make_html.sh CIGitHub/FlaBiblio/bin/debug/net8.0/FlatBiblio
+      run: cat make_html.sh
 
 
