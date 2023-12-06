@@ -26,7 +26,7 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Grant execute permission and run make_html.sh
-      run: cat make_html.sh
+    - name: Run make_html.sh
+      run: sh make_html.sh CIGitHub/FlaBiblio/bin/debug/net8.0/FlatBiblio
 
 
